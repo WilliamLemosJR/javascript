@@ -16,17 +16,41 @@
             color: white;
             width: 200px;
             height: 200px;
+            line-height: 200px;
+            text-align: center;
         }
 
-        p {
-            text-align: center;
-            padding:50px;
-        }
     </style>
 </head>
 <body>
-    <div id="area">
-        <p>Interaja...</p>
+    <div id="area" >
+        Interaja...
     </div>
+
+    <script>
+        area.addEventListener ('click', clicar)
+        area.addEventListener('mouseenter' , entrar)
+        area.addEventListener('mouseout' , sair)
+
+        function clicar() {
+            var area = window.document.getElementById('area')
+            area.innerText='clicou!'
+            area.style.background='red'
+           
+        }
+
+        function entrar() {
+            var area = window.document.getElementById('area')
+            area.innerText='Entrou'
+           
+        }
+
+        function sair() {
+            var area = window.document.getElementById('area')
+            area.innerText='Saiu'
+            area.style.background='green'
+           
+        }
+    </script>
 </body>
 </html>
