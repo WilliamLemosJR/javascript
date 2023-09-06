@@ -6,6 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Nacionalidade</h1>
+
+    <form action="exe.php" method="post">
+        <label for="inasci">Qual país você nasceu ?</label>
+        <input type="text" name="nasci" id="inasci">
+
+        <input type="button" value="verificar" onclick="calcular()">
+
+
+
+    </form>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+       
+       function calcular() {
+            var txtn = window.document.getElementById('inasci')
+            var res = window.document.getElementById('res')
+            var nasci = String(txtn.value)
+
+            res.innerHTML = `<p>Vivendo em ${nasci}</p>`
+            if (nasci=='brasil') {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p> Você é estrangeiro </p>`
+            }
+            
+
+       }
+    </script>
 </body>
 </html>
