@@ -23,6 +23,11 @@ div {
     padding: 10px;
 }
 
+#flista {
+    width: 150px;
+    margin-top: 20px;
+}
+
 img#imagem {
     border-radius: 50%;
     width: 250px;
