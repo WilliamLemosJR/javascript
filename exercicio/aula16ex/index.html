@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="modelo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <form action="dados.php" method="post" autocomplete="on">
+            <div id="dados">
+
+                <p>
+                    <label for="iinicio">Início:</label>
+                    <input type="number" name="inicio" id="iinicio">
+                </p>
+
+                <p>
+                    <label for="ifim">Fim:</label>
+                    <input type="number" name="fim" id="ifim">
+                </p>
+
+                <p>
+                    <label for="ipasso">Passo:</label>
+                    <input type="number" name="passo" id="ipasso">
+                </p>
+
+                <p>
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
+
+            </div>
+
+            <div id="res">
+
+            </div>
+
+        </form>
+    </section>
+     <footer>
+        <p>&copy; William Lemos</p>
+     </footer>
+
+    <script src="modelo/script.js"></script>
+</body>
+</html>
