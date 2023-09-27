@@ -1,0 +1,37 @@
+/* Estilos do slider */
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  
+  /* Outros estilos */
+  /* ... (mantenha os estilos anteriores) */
+  
